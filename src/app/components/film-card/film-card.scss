@@ -30,7 +30,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 12px;
+  }
   &__year,
   &__genre {
     margin: 0 12px 4px;

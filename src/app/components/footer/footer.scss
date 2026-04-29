@@ -1,0 +1,41 @@
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 2rem 0;
+  margin-top: 4rem; // Відштовхуємося від контенту сторінки
+
+  &__container {
+    max-width: 87.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; // На мобільних буде в стовпчик
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row; // На десктопі — в лінію
+      justify-content: space-between;
+    }
+  }
+
+  &__copy,
+  &__author {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+
+  &__link {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__school {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
