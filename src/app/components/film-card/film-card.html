@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card__poster">
+    <img [src]="film().posterUrl" [alt]="film().title" />
+  </div>
+  <h2 class="card__title">{{ film().title }}</h2>
+  <div class="card__year">{{ film().year }}</div>
+  <div class="card__genre">{{ film().genre }}</div>
+  <div class="card__rating">{{ film().rating }}</div>
+</div>

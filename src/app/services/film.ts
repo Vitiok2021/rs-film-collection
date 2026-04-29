@@ -1,10 +1,11 @@
 import { Injectable, signal } from '@angular/core';
+import { FilmInterface } from '../interfaces/film';
 
 @Injectable({
   providedIn: 'root',
 })
-export class Film {
-  films = signal([
+export class FilmsService {
+  films = signal<FilmInterface[]>([
     {
       id: 1,
       title: 'Interstellar',

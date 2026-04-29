@@ -1,3 +1,7 @@
-@for (item of film(); track item.id) {
-  <div class="film__title">{{ item.title }}</div>
-}
+<section class="cards">
+  <div class="cards__container">
+    @for (item of film(); track item.id) {
+      <app-film-card [film]="item"></app-film-card>
+    }
+  </div>
+</section>
