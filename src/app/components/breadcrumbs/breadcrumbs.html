@@ -1,1 +1,15 @@
-<p>breadcrumbs works!</p>
+<div class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <ul class="breadcrumbs__list">
+      @for (item of breadcrumbs(); track item.label) {
+        <li class="breadcrumbs__item">
+          @if (item.url) {
+            <a [routerLink]="item.url">{{ item.label }}</a>
+          } @else {
+            <span class="breadcrumbs__label">{{ item.label }}</span>
+          }
+        </li>
+      }
+    </ul>
+  </div>
+</div>

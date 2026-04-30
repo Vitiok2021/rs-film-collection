@@ -154,4 +154,6 @@ export class FilmsService {
   getFilmById(id: string) {
     return this.films().find((film) => film.id === Number(id));
   }
+  currentFilmTitle = signal<string | null>(null);
+  isAboutPage = signal<boolean>(false);
 }

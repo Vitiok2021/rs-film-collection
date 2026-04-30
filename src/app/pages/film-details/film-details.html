@@ -7,7 +7,7 @@
       <h2 class="details__title">{{ film()?.title }}</h2>
       <div class="details__year">{{ film()?.year }}</div>
       <div class="details__genre">{{ film()?.genre }}</div>
-      <div class="details__info">{{ film()?.rating }} | {{ film()?.duration }}</div>
+      <div class="details__info">{{ film()?.rating }} | {{ film()?.duration | duration }}</div>
       <div class="details__descr">{{ film()?.description }}</div>
       <a routerLink="/" class="details__back">Назад</a>
     </div>
