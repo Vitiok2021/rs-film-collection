@@ -1,0 +1,11 @@
+.search {
+  &__container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 87.5rem;
+    display: grid;
+  }
+  &__input {
+    padding: 10px 5px;
+  }
+}
