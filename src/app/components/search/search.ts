@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Autofocus } from '../../directives/autofocus';
+import { FilmsService } from '../../services/film';
 
 @Component({
   selector: 'app-search',
@@ -7,4 +8,10 @@ import { Autofocus } from '../../directives/autofocus';
   templateUrl: './search.html',
   styleUrl: './search.scss',
 })
-export class Search {}
+export class Search {
+  filmService = inject(FilmsService);
+  onSearch(event: any) {
+    const text = (event.target as HTMLInputElement).value;
+    this.filmService.searchItem.set(text);
+  }
+}

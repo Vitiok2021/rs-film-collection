@@ -2,8 +2,10 @@
 
 <section class="cards">
   <div class="cards__container">
-    @for (item of film(); track item.id) {
+    @for (item of filmService.filteredFilms(); track item.id) {
       <app-film-card [film]="item"></app-film-card>
+    } @empty {
+      <div class="cards__not-found">Фільми не знайдено...</div>
     }
   </div>
 </section>
