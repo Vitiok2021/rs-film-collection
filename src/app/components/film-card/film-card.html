@@ -1,4 +1,4 @@
-<a href="#" class="card">
+<a [routerLink]="['/films', film().id]" class="card">
   <div class="card__poster">
     <img [src]="film().posterUrl" [alt]="film().title" />
   </div>

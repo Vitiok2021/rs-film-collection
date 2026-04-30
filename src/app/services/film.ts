@@ -151,4 +151,7 @@ export class FilmsService {
       isFavorite: false,
     },
   ]);
+  getFilmById(id: string) {
+    return this.films().find((film) => film.id === Number(id));
+  }
 }
