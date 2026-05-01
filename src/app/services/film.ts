@@ -166,9 +166,23 @@ export class FilmsService {
   filteredFilms = computed(() => {
     const term = this.searchItem().toLowerCase();
     const allFilms = this.films();
-
     if (!term) return allFilms;
-
     return allFilms.filter((film) => film.title.toLowerCase().includes(term));
+  });
+
+  // addToFavorite
+  favoriteIds = signal<number[]>([]);
+  toggleFavorite(id: number) {
+    const currentFavorites = this.favoriteIds();
+    if (currentFavorites.includes(id)) {
+      const updateFavorites = currentFavorites.filter((curId) => curId !== id);
+      this.favoriteIds.set(updateFavorites);
+    } else {
+      const newFav = [...currentFavorites, id];
+      this.favoriteIds.set(newFav);
+    }
+  }
+  favoritesCount = computed(() => {
+    return this.favoriteIds().length;
   });
 }
