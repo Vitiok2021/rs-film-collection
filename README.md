@@ -25,8 +25,6 @@ A small movie catalog Single Page Application (SPA) built to demonstrate core An
 
 ## How to Run Locally
 
-## How to Run Locally
-
 1. Clone the repository:
    `git clone https://github.com/vitiok2021/rs-film-collection.git`
 
