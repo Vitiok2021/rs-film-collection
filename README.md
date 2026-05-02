@@ -6,7 +6,7 @@ A small movie catalog Single Page Application (SPA) built to demonstrate core An
 
 [Live Preview](https://vitiok2021.github.io/rs-film-collection/)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework:** Angular 20+ (Standalone components)
 - **Reactivity:** Angular Signals (100% signal-based, strictly no RxJS)
