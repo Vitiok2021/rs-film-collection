@@ -25,21 +25,18 @@ A small movie catalog Single Page Application (SPA) built to demonstrate core An
 
 ## How to Run Locally
 
+## How to Run Locally
+
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/vitiok2021/rs-film-collection.git](https://github.com/vitiok2021/rs-film-collection.git)
-   Navigate to the project folder:
-   ```
+   `git clone https://github.com/vitiok2021/rs-film-collection.git`
 
-Bash
-cd rs-film-collection
-Install dependencies:
+2. Navigate to the project folder:
+   `cd rs-film-collection`
 
-Bash
-npm install
+3. Install dependencies:
+   `npm install`
 
 4. Start the development server:
-   ```bash
-   ng serve
-   Open your browser and navigate to http://localhost:4200/.
-   ```
+   `ng serve`
+
+5. Open your browser and navigate to `http://localhost:4200/`.
